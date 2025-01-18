@@ -1,0 +1,182 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+/* .main-body{
+    height: 100vh;
+    width: 100%;
+} */
+.navbar{
+    /* height: 100px;
+    width: 100%; */
+  background-image: url(../Images/Background/navbar.jpg);
+
+}
+.nav-1{
+  
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 0px 30px rgba(68, 76, 151, 0.37);
+    border: 2px solid rgba(63, 60, 60, 0.18);
+    border-radius: 5px;
+
+  }
+  ul.container a
+  {
+      color: #FFF;
+      text-decoration: none;
+      font: 20px Raleway;
+      margin: 0px 10px;
+      padding: 10px 10px;
+      position: relative;
+      z-index: 0;
+      cursor: pointer;
+  }
+  
+  .red
+  {
+      background:transparent;
+  }
+
+  /* Top and Bottom borders go out */
+ul.topBotomBordersOut a:before, ul.topBotomBordersOut a:after
+{
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    height: 2px;
+    background: #0f0f0f;
+    content: "";
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+ul.topBotomBordersOut a:before
+{
+    top: 0px;
+    transform: translateY(10px);
+}
+
+ul.topBotomBordersOut a:after
+{
+    bottom: 0px;
+    transform: translateY(-10px);
+}
+
+ul.topBotomBordersOut a:hover:before, ul.topBotomBordersOut a:hover:after
+{
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+
+a{
+    text-decoration: none;
+    
+  
+}
+
+.about-img{
+    border-radius:50px 0px 50px 0px;
+}
+
+
+.banner{
+height: 700px;
+width: 100%;
+/* background-image: url(../Images/Background/flower.jpg); */
+/* background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  */
+            /* url('../Images/Background/flower.jpg'); */
+             background: linear-gradient(to bottom, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.3)), 
+            url('../Images/Background/flower.jpg') no-repeat center center/cover;
+background-size: 100% 100%;
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+color:black;
+position: relative;
+
+/* display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center; */
+/* box-shadow: 5px 10px 15px rgb(12, 12, 12); */
+
+}
+.services{
+
+    height: auto;
+   
+}
+.sec1{
+   
+    background-image: url(../Images/Background/navbar.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    /* box-shadow: 5px 10px 15px rgb(12, 12, 12); */
+}
+.gallery{
+    height: 400px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.testimonail1{
+    /* background-image: url(../Images/navbar.jpg); */
+    background-position: center;
+    border: 2px solid black;
+    border-radius: 20px 0px 20px 0px;
+}
+
+
+
+.foot{
+    /* background-image: url(../Images/flower.jpg); */
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    
+}
+
+
+
+.footer-last{
+
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.3)), 
+    url('../Images/Illustrations/footer.jpg') no-repeat center center/cover;
+}
+
+
+
+@media(max-width:768px){
+
+    .banner{
+        height: 600px;
+        width: 100%;
+        background: linear-gradient(to bottom, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.3)), 
+        url('../Images/Background/flower.jpg') no-repeat center center/cover;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+  
+    
+       
+    }
+
+    .navbar-toggler-icon {
+           background-color: black;
+           color: black;
+           border: 2px solid black;
+           border-radius: 7px;
+    }
+
+
+}
